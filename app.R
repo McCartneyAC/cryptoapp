@@ -71,6 +71,9 @@ server <- function(input, output){
 
   freq.sort<-function(x){
     req(input$ins)
+    if(nchar(x) < 50) {
+      print("Try it with a little more text. It works best when it has more data.")
+      } else {
     english.by.frequency <- "etaoinshrdlcumwfgypbvkjxqz" 
     cleaned <-  gsub(pattern = "\\W|\\d", replace = "",  tolower(x))
     letter.frequencies <- substring(cleaned, 1:nchar(cleaned),1:nchar(cleaned))
@@ -83,9 +86,9 @@ server <- function(input, output){
     final     <- paste(ordered_in_a_string, addendum2, sep="")
     cipher <- chartr(final,english.by.frequency,tolower(x)) 
     finaltext <- cat(cipher)
-    if(nchar(x) < 50) stop("Try it with a little more text. It works best when it has more data.")
     return(finaltext)
     }
+  }
 
 
   
