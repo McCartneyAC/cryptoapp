@@ -5,4 +5,4 @@ This was an early project that I created to force myself to learn text evaluatio
 
 Better versions of this app exist online that will allow you to analyze your text and hard-code letters that you have solved, but this feature is not yet possible in my construction of the app. Additionally, a better app might search for strings such as "the" and use it to auto-decode, but again, this ain't it. 
 
-To give it a while, go to [https://acm9q.shinyapps.io/cryptoapp/](the app) and type in your cyphertext. Don't have any? I recommend the speeches of Barack Obama when cycled through [www.rot13.com](rot13). 
+To give it a while, go to [the app](https://acm9q.shinyapps.io/cryptoapp/) and type in your cyphertext. Don't have any? I recommend the speeches of Barack Obama when cycled through [rot13](www.rot13.com). 
